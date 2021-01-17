@@ -1,0 +1,364 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background:#1e1e1e;
+  border: 0.5px solid #4e4e4e;
+}
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  transition: ease-in-out 1s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:#4f4f4f;
+}
+
+.wrap{
+  background-image: url(./images/background.png);
+  min-height: 300vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1e1e1e;
+  scroll-snap-type: y mandatory;
+
+}
+
+section.introduce{
+  position: relative;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  font-family: "Malgun Gothic",sans-serif;
+  scroll-snap-align: start;
+}
+.contents_name{
+  font-size:35px;
+  font-weight: bold;
+  color : #69cdfb;
+  margin: 0px 210px 20px 0px;
+}
+.contents_job{
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 240px;
+  margin-bottom: 30px;
+  line-height: 46px;
+}
+.contents_add_key_Value{
+  font-size: 35px;
+  font-weight: bold;
+  color: #c48b73;
+  margin: -10px 0px 50px 119px;
+}
+.cursor{
+  color: white;
+  font-weight: 100;
+  animation: cursor infinite 0.5s;
+  margin-left: -11px;
+}
+@keyframes cursor{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.contents_list{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0px;
+}
+.contents_list > li{
+  display: inline-block;
+  width : 52px;
+  height: 52px;
+  line-height: 52px;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.fab{
+  font-size: 25px;
+  margin-top: 13px;
+}
+.facebook:hover{
+  background-color: #3d548e;
+}
+.git:hover{
+  background-color: #000000;
+}
+.instagram:hover{
+  background: linear-gradient(45deg,#eec800 20%,#ee060f 60%, #7a38ab 80%);
+}
+.blog:hover{
+  background-color: #19ce60;
+}
+.contents_list > li:last-child{
+  margin-right: 0;
+}
+.contents_list > li > a{
+  color: white;
+}
+
+/* interview */
+@font-face {
+  font-family: 'netmarbleB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+section.interview{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: 100vh;
+  margin-top: -33px;
+  z-index: 20;
+  scroll-snap-align: start;
+} 
+
+.introduce_contents_title{
+  margin: 24px 0 0 50px;
+  align-self: flex-start;
+  font-size: 35px;
+  font-weight: 500;
+  color: #6a9955;
+  font-family: 'ChosunGu';
+}
+.interview_container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1440px;
+  height: 700px;
+  margin: 0;
+}
+.sentence_container
+,.sentence_container2{
+  position: relative;
+  height: 340px;
+  width: 655px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title_container{
+  display: flex;
+  align-items: center;
+  width: 652px;
+  height: 40px;
+  background-color: #252526;
+}
+.interview_q{
+  font-size: 20px;
+  font-weight: bolder;
+  color: #e6e659;
+  font-family: 'netmarbleB';
+  padding: 15px 15px;
+  background:#1e1e1e;
+
+}
+
+.interview_sub_title{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 376px;
+  height: 40px;
+  font-weight: bolder;
+  font-size: 24px;
+  color: #ffffff;
+  font-family: 'ChosunGu';  
+  background:#1e1e1e;
+
+}
+.interview_sub_title2{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 512px;
+  height: 40px;
+  font-weight: bolder;
+  font-size: 24px;
+  color: #ffffff;
+  font-family: 'ChosunGu';  
+  background:#1e1e1e;
+}
+.interview_margin{
+  position: absolute;
+  right: 27px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20px;
+  height: 40px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: #cbcbcb;
+}
+.interview_box{
+  position: relative;
+  width: 650px;
+  height: 300px;
+  overflow-y: auto;
+}
+.interview_box2{
+  position: relative;
+  width: 650px;
+  height: 300px;
+}
+.interview_answer{
+  height: 290px;
+  font-family: 'ChosunGu';
+  color: rgb(212, 212, 212);
+  font-size: 19px;
+  line-height: 38px;
+  padding: 10px 20px 0px 20px;
+}
+.sentence_container:nth-child(1),
+.sentence_container:nth-child(2){
+  margin-bottom: 20px;
+}
+
+
+
+/* portfolio */
+@font-face {
+  font-family: 'InfinitySans-BoldA1';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ChosunGu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+section.portfolio{
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  scroll-snap-align: start;
+  font-family: 'ChosunGu';
+  font-weight: 100;
+} 
+.portfolio_contents_title{
+  margin: 5px 0 0 50px;
+  align-self: flex-start;
+  font-size: 35px;
+  font-weight: 500;
+  color: #6a9955;
+  font-family: 'ChosunGu';
+}
+.portfolio_container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  margin: -10px 0px 0px 18px;
+}
+.image_container{
+  position: relative;
+  top: 10px;
+  left: 34px;
+  width: 600px;
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left_arrow{
+  position: relative;
+  right: 10px;
+  color: #bb6845;
+  font-size: 80px;
+  font-weight: 100;
+
+}
+.right_arrow{
+  position: relative;
+  color:#bb6845;
+  font-size: 80px;
+  font-weight: 100;
+}
+
+.portfolio_image{
+  width: 470px;
+  position: relative;
+}
+.explain_container{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-top: 20px;
+  position: relative;
+  width: 650px;
+  height: 330px;
+  overflow-y: auto;
+}
+
+.explain_box{
+  margin-bottom: 10px;
+  padding: 0px 10px;
+}
+
+.portfolio_field_name{
+  position: relative;
+  font-size: 19px;
+  color: #3b94d2;
+}
+.portfolio_explain{
+  position: relative;
+  color: white;
+  line-height: 29px;
+}
+
+@media screen and (max-width:1310px){
+  section.interview {
+    height: 1290px;
+  }
+  .interview_container {
+    height: 1190px;
+  }
+  .sentence_container2 {
+    z-index: 2;
+    height: 480px;
+    margin-bottom: 25px;
+  }
+  .portfolio_container {
+    height: 700px;
+    margin: -10px 0px 10px 18px;
+  }
+  .interview_box2{
+    height: 450px;
+  }
+}
