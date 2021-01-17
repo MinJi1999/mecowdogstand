@@ -70,6 +70,9 @@ section.introduce{
   margin-left: -131px;
   font-size: 35px;
 }
+.contents_value{
+  display: inline-block;
+}
 .contents_add_key_value{
   font-size: 35px;
   font-weight: bold;
@@ -119,7 +122,7 @@ section.introduce{
   background-color: #000000;
 }
 .instagram:hover{
-  background: linear-gradient(45deg,#eec8020%,#ee060f 60%, #7a38ab 80%);
+  background: linear-gradient(45deg,#eec800 20%,#ee060f 60%, #7a38ab 80%);
 }
 .blog:hover{
   background-color: #19ce60;
