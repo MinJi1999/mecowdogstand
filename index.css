@@ -23,7 +23,7 @@ body{
 
 .wrap{
   background-image: url(./images/background.png);
-  min-height: 300vh; 
+  min-height: 320vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -343,8 +343,8 @@ section.portfolio{
 }
 
 @media screen and (max-width:1310px){
-  section.interview {
-    height: 1290px;
+  .wrap {
+    min-height: 320vh;
   }
   .interview_container {
     height: 1190px;
