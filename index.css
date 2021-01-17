@@ -23,7 +23,7 @@ body{
 
 .wrap{
   background-image: url(./images/background.png);
-  min-height: 320vh; 
+  min-height: 300vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,6 +45,13 @@ section.introduce{
   font-family: "Malgun Gothic",sans-serif;
   scroll-snap-align: start;
 }
+.introduce_container{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .contents_name{
   font-size:35px;
   font-weight: bold;
@@ -58,7 +65,12 @@ section.introduce{
   margin-bottom: 30px;
   line-height: 46px;
 }
-.contents_add_key_Value{
+.bracket{
+  color: white;
+  margin-left: -131px;
+  font-size: 35px;
+}
+.contents_add_key_value{
   font-size: 35px;
   font-weight: bold;
   color: #c48b73;
@@ -107,7 +119,7 @@ section.introduce{
   background-color: #000000;
 }
 .instagram:hover{
-  background: linear-gradient(45deg,#eec800 20%,#ee060f 60%, #7a38ab 80%);
+  background: linear-gradient(45deg,#eec8020%,#ee060f 60%, #7a38ab 80%);
 }
 .blog:hover{
   background-color: #19ce60;
@@ -164,6 +176,7 @@ section.interview{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .title_container{
   display: flex;
@@ -238,10 +251,6 @@ section.interview{
   line-height: 38px;
   padding: 10px 20px 0px 20px;
 }
-.sentence_container:nth-child(1),
-.sentence_container:nth-child(2){
-  margin-bottom: 20px;
-}
 
 
 
@@ -265,7 +274,7 @@ section.portfolio{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 754px;
   scroll-snap-align: start;
   font-family: 'ChosunGu';
   font-weight: 100;
@@ -344,21 +353,79 @@ section.portfolio{
 
 @media screen and (max-width:1310px){
   .wrap {
-    min-height: 320vh;
+    min-height: 340vh;
+  }
+  section.interview{
+    height: 110vh;
+    margin-top: 0px;
   }
   .interview_container {
-    height: 1190px;
+    height: 1360px;
+  }
+  .sentence_container{
+    width: 745px;
+    margin-bottom: 34px;
   }
   .sentence_container2 {
     z-index: 2;
-    height: 480px;
-    margin-bottom: 25px;
+    width: 745px;
+    height: 330px;
+    margin-bottom: 34px;
+  }
+  
+  .interview_box2{
+    width: 745px;
+    height: 330px;
+    overflow-y: auto;
+  }
+  .interview_box{
+    width: 745px;
+  }
+  .contents_job {
+    font-size: 50px;
+    margin-left: 140px;
+    line-height: 59px;
+  }
+  .contents_name{
+    font-size:50px;
+    margin: 0px 210px 20px 0px;
+  }
+  .bracket {
+    margin-left: -37px;
+  }
+  .contents_add_key_value{
+    margin: 0px 0px 50px 102px;
+    font-size: 50px;
+    line-height: 58px;
+  }
+  .contents_value{
+    display: inline;
+  }
+  .interview_answer{
+    height: 290px;
+    font-size: 23px;
+    line-height: 40px;
+  }
+  .title_container{
+    width: 745px;
+  }
+  .section.portfolio{
+    height: 100vh;
+  }
+  .portfolio_field_name {
+    font-size: 24px;
   }
   .portfolio_container {
     height: 700px;
-    margin: -10px 0px 10px 18px;
+    margin: 0px 0px 10px 18px;
   }
-  .interview_box2{
-    height: 450px;
+  .portfolio_explain {
+    line-height: 34px;
+  }
+  .image_container {
+    left: 77px;
+  }
+  .explain_container {
+    left: 45px;
   }
 }
