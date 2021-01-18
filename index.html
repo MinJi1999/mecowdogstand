@@ -167,18 +167,18 @@
                 </div>
               </div>
               <div class="explain_box">
-                <div class="portfolio_field_name">주요 기능 :
-                  <span class="portfolio_explain">
-                    할 일을 적고 지움, 해당 지역 정보와 그 지역의 온도를 보여줌.
-                    랜덤으로 명언을 보여줌. 미니 게임도 있음 
-                  </span>
-                </div>
-              </div>
-              <div class="explain_box">
                 <div class="portfolio_field_name">설명 :
                   <span class="portfolio_explain">
                     할 일을 쓰고, 완료했으면 지울 수 있음. 해당 지역과, 그 지역의 온도를 api로 가져옴.
                     온도를 온도계 모양으로 시각화함. 메뉴 안에 게임이 숨겨져 있음. / 비슷한 기능을 리액트로 구현함.
+                  </span>
+                </div>
+              </div>
+              <div class="explain_box">
+                <div class="portfolio_field_name">주요 기능 :
+                  <span class="portfolio_explain">
+                    할 일을 적고 지움, 해당 지역 정보와 그 지역의 온도를 보여줌.
+                    랜덤으로 명언을 보여줌. 미니 게임도 있음 
                   </span>
                 </div>
               </div>
@@ -231,19 +231,27 @@
                 </div>
               </div>
               <div class="explain_box">
-                <div class="portfolio_field_name">주요 기능 :
+                <div class="portfolio_field_name">설명 :
                   <span class="portfolio_explain">
-                    비밀번호를 암호화하여 회원가입 기능, 편지 내용 사진을 업로드, 편지 내용 사진은 cloudianry에 저장됨.
-                    고객은 원하는 편지지와 장식품, 편지의 분위기를 맞춰줄 색도 고르게 됨. 고객에게 보여질 편지지와 장식품을 MongoDB에 업로드.
-                    각각 편지지, 장식품의 가격을 더해 Paypal로 결제기능. 결제 뒤에는 간단한 결제 정보를 History 페이지에서 볼 수 있음.
+                    몇 년 뒤의 나에게 쓴 편지를 분위기를 한층 입혀, 때에 맞춰 다시 본인에게 보내주는 서비스.
+                    고객이 고를 수 있는 편지지와 장식품은(이하 상품들) upload 페이지에서 업로드함.
+                    고객이 내용을 담은 편지 사진을 업로드를 함.
+                    업로드한 상품들이 페이지에 보이고 각각 상품의 상세페이지에 들어가
+                    장바구니에 담을 수 있다. 상품들을 담은 뒤에는 원하는 색을 4가지 고른 뒤,
+                    최종적으로 고객은 자신이 고른 상품들과 색을 확인할 수 있음.
+                    그다음에는 결제가 진행됨.
                   </span>
                 </div>
               </div>
               <div class="explain_box">
-                <div class="portfolio_field_name">설명 :
+                <div class="portfolio_field_name">주요 기능 :
                   <span class="portfolio_explain">
-                    몇 년 뒤의 나에게 쓴 편지를 다시 본인에게 보내주는 서비스. 편지지의 종류, 편지를 꾸밀 수 있는 장식품을
-                    업로드 할 수 있음.
+                    고객은 편지 내용 사진을 업로드, 편지 내용 사진은 cloudianry에 저장됨.
+                    고객에게 보일 상품들을 Node.js의 express를 이용해 MongoDB에 업로드.
+                    이후에 고객이 고른 상품들도 db에 저장이 됨.
+                    axios를 사용해 서버에 요청을 한 뒤, 페이지에 상품들을 보이게 한다. 
+                    상품들은 리덕스 dispatch 함수를 사용해 장바구니에 넣음. 장바구니 정보도 db에 저장됨.
+                    각각 편지지, 장식품의 가격을 더해 Paypal로 결제 기능. 결제 뒤에는 간단한 결제 정보를 History 페이지에서 볼 수 있음.
                   </span>
                 </div>
               </div>
