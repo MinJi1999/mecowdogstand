@@ -67,7 +67,7 @@ section.introduce{
 }
 .bracket{
   color: white;
-  margin-left: -131px;
+  margin-left: -80px;
   font-size: 35px;
 }
 .contents_value{
@@ -78,6 +78,9 @@ section.introduce{
   font-weight: bold;
   color: #c48b73;
   margin: -10px 0px 50px 119px;
+}
+.white_text{
+  color: white;
 }
 .cursor{
   color: white;
@@ -171,8 +174,16 @@ section.interview{
   height: 700px;
   margin: 0;
 }
-.sentence_container
-,.sentence_container2{
+.sentence_container{
+  position: relative;
+  height: 340px;
+  width: 655px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.sentence_container2{
   position: relative;
   height: 340px;
   width: 655px;
@@ -401,9 +412,6 @@ section.portfolio{
   .contents_name{
     font-size:50px;
     margin: 0px 210px 20px 0px;
-  }
-  .bracket {
-    margin-left: -37px;
   }
   .contents_add_key_value{
     margin: 0px 0px 50px 102px;
