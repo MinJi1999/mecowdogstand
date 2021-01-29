@@ -23,7 +23,7 @@ body{
 
 .wrap{
   background-image: url(./images/background.png);
-  min-height: 300vh; 
+  min-height: 380vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@ body{
 section.introduce{
   position: relative;
   top: 0;
-  height: 100vh;
+  height: 837px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,7 +77,7 @@ section.introduce{
 .contents_add_key_value{
   font-size: 35px;
   font-weight: bold;
-  color: #c48b73;
+  color: #be795c;
   margin: -10px 0px 50px 119px;
 }
 .white_text{
@@ -119,6 +119,90 @@ section.introduce{
   font-size: 25px;
   margin-top: 13px;
 }
+.click{
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  animation: color-change ease infinite 1s;
+}
+.mini_vscode{
+  display: none;
+  position: absolute;
+  bottom: 195px;
+  right: 422px;
+  z-index: 20;
+  width: 300px;
+  height: 200px;
+  color: #858585;
+  line-height: 24px;
+  background-color: #1e1e1e;
+  box-shadow: 5px 5px rgb(46, 46, 46);
+}
+.mini_vscode_show{
+  display: block;
+  position: absolute;
+  bottom: 195px;
+  right: 422px;
+  z-index: 20;
+  width: 300px;
+  height: 200px;
+  color: #858585;
+  line-height: 24px;
+  background-color: #1e1e1e;
+  box-shadow: 5px 5px rgb(46, 46, 46);
+}
+.vscode_container{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  background-color: #252526;
+}
+.vscode_interview_q{
+  font-size: 20px;
+  font-weight: bolder;
+  color: #e6e659;
+  font-family: 'netmarbleB';
+  padding: 15px 15px;
+  background:#1e1e1e;
+
+}
+.vscode_sub_title{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  height: 40px;
+  font-weight: bolder;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: 'ChosunGu';  
+  background:#1e1e1e;
+
+}
+.vscode_interview_margin{
+  position: absolute;
+  right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20px;
+  height: 40px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: #cbcbcb;
+}
+@keyframes color-change{
+  0%{
+      color: #be795c;
+  }
+  30%{
+      color:#69cdfb;
+  }
+  100%{
+      color: #99ce9b;
+  }
+}
 .facebook:hover{
   background-color: #3d548e;
 }
@@ -128,8 +212,8 @@ section.introduce{
 .instagram:hover{
   background: linear-gradient(45deg,#eec800 20%,#ee060f 60%, #7a38ab 80%);
 }
-.blog:hover{
-  background-color: #19ce60;
+.click:hover{
+  background-color: white;
 }
 .contents_list > li:last-child{
   margin-right: 0;
@@ -151,7 +235,7 @@ section.interview{
   display: flex;
   justify-content: center;
   align-items: center;  
-  height: 100vh;
+  height: 837px;
   margin-top: -33px;
   z-index: 20;
   scroll-snap-align: start;
@@ -175,6 +259,7 @@ section.interview{
   height: 700px;
   margin: 0;
 }
+
 .sentence_container{
   position: relative;
   height: 340px;
@@ -184,10 +269,10 @@ section.interview{
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.sentence_container2{
+.sentence_container2 {
   position: relative;
-  height: 340px;
   width: 655px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -261,10 +346,16 @@ section.interview{
 .interview_box2{
   position: relative;
   width: 650px;
-  height: 300px;
 }
 .interview_answer{
   height: 290px;
+  font-family: 'ChosunGu';
+  color: rgb(212, 212, 212);
+  font-size: 19px;
+  line-height: 38px;
+  padding: 10px 20px 0px 20px;
+}
+.interview_answer2{
   font-family: 'ChosunGu';
   color: rgb(212, 212, 212);
   font-size: 19px;
@@ -292,9 +383,6 @@ section.portfolio{
   z-index: 20;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 754px;
   scroll-snap-align: start;
   font-family: 'ChosunGu';
   font-weight: 100;
@@ -314,6 +402,21 @@ section.portfolio{
   justify-content: center;
   height: 700px;
   margin: -10px 0px 0px 18px;
+}
+.portfolio_container2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  margin: 0px 0px 0px 100px;
+}
+.plz {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1700px;
+  margin-top: 25px;
 }
 .image_container{
   position: relative;
@@ -373,18 +476,25 @@ section.portfolio{
 
 @media screen and (max-width:1310px){
   .wrap {
-    min-height: 310vh;
+    min-height: 330vh;
+  }
+  section.introduce{
+    height: 100vh;
+    margin-top: 0px;
   }
   section.interview{
     height: 100vh;
     margin-top: 0px;
   }
   section.portfolio{
-    height: 100vh;
+    height: 125vh;
     margin-top: 10px;
   }
   .interview_container {
     height: 1360px;
+  }
+  .idontknow {
+    height: 670px;
   }
   .sentence_container{
     width: 745px;
