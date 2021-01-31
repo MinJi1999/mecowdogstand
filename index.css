@@ -380,6 +380,7 @@ section.interview{
 }
 section.portfolio{
   position: relative;
+  height: 1415px;
   z-index: 20;
   display: flex;
   flex-wrap: wrap;
@@ -414,6 +415,7 @@ section.portfolio{
 .plz {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 1700px;
   margin-top: 25px;
@@ -476,7 +478,7 @@ section.portfolio{
 
 @media screen and (max-width:1310px){
   .wrap {
-    min-height: 330vh;
+    min-height: 370vh;
   }
   section.introduce{
     height: 100vh;
