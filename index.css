@@ -128,8 +128,9 @@ section.introduce{
 .mini_vscode{
   display: none;
   position: absolute;
-  bottom: 195px;
-  right: 422px;
+  /* bottom: 195px;
+  right: 422px; */
+  margin: -232px 0px 0px 270px;
   z-index: 20;
   width: 300px;
   height: 200px;
@@ -141,8 +142,7 @@ section.introduce{
 .mini_vscode_show{
   display: block;
   position: absolute;
-  bottom: 195px;
-  right: 422px;
+  margin: -232px 0px 0px 270px;
   z-index: 20;
   width: 300px;
   height: 200px;
@@ -560,5 +560,9 @@ section.portfolio{
   }
   .bracket {
     margin-left: -39px;
-}
+  }
+  .mini_vscode_show {
+    bottom: 645px;
+    right: 70px;
+  }
 }
