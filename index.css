@@ -561,4 +561,7 @@ section.portfolio{
   .explain_container {
     left: 45px;
   }
+  .bracket {
+    margin-left: -39px;
+}
 }
