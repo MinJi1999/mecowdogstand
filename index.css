@@ -23,7 +23,7 @@ body{
 
 .wrap{
   background-image: url(./images/background.png);
-  min-height: 380vh; 
+  min-height: 350vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -477,9 +477,6 @@ section.portfolio{
 }
 
 @media screen and (max-width:1310px){
-  .wrap {
-    min-height: 370vh;
-  }
   section.introduce{
     height: 100vh;
     margin-top: 0px;
