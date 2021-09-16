@@ -233,16 +233,17 @@ section.introduce{
 section.interview{
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;  
-  height: 837px;
+  /* height: 837px; */
   margin-top: -33px;
   z-index: 20;
   scroll-snap-align: start;
 } 
 
 .introduce_contents_title{
-  margin: 24px 0 0 50px;
+  margin: 0px 0 24px 50px;
   align-self: flex-start;
   font-size: 35px;
   font-weight: 500;
@@ -255,8 +256,8 @@ section.interview{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 1440px;
-  height: 700px;
+  width: 90%;
+  /* height: 700px; */
   margin: 0;
 }
 
@@ -380,7 +381,7 @@ section.interview{
 }
 section.portfolio{
   position: relative;
-  height: 1415px;
+  /* height: 1415px; */
   z-index: 20;
   display: flex;
   flex-wrap: wrap;
@@ -388,8 +389,16 @@ section.portfolio{
   font-family: 'ChosunGu';
   font-weight: 100;
 } 
+.plz {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1700px;
+  margin-top: 25px;
+}
 .portfolio_contents_title{
-  margin: 5px 0 0 50px;
+  margin: 35px 0 0 50px;
   align-self: flex-start;
   font-size: 35px;
   font-weight: 500;
@@ -401,7 +410,7 @@ section.portfolio{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 700px;
+  /* height: 700px; */
   margin: -10px 0px 0px 18px;
 }
 .portfolio_container2{
@@ -409,16 +418,8 @@ section.portfolio{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 700px;
-  margin: 0px 0px 0px 100px;
-}
-.plz {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 1700px;
-  margin-top: 25px;
+  /* height: 700px; */
+  /* margin: 0px 0px 0px 100px; */
 }
 .image_container{
   position: relative;
@@ -482,19 +483,19 @@ section.portfolio{
     margin-top: 0px;
   }
   section.interview{
-    height: 100vh;
+    /* height: 100vh; */
     margin-top: 0px;
   }
   section.portfolio{
-    height: 125vh;
+    /* height: 125vh; */
     margin-top: 10px;
   }
-  .interview_container {
+  /* .interview_container {
     height: 1360px;
-  }
-  .idontknow {
+  } */
+  /* .idontknow {
     height: 670px;
-  }
+  } */
   .sentence_container{
     width: 745px;
     margin-bottom: 34px;
@@ -543,9 +544,9 @@ section.portfolio{
   .title_container{
     width: 745px;
   }
-  section.portfolio{
+  /* section.portfolio{
     height: 100vh;
-  }
+  } */
   .portfolio_field_name {
     font-size: 24px;
   }
