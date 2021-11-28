@@ -1,7 +1,7 @@
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   width: 100%;
   overflow-x: hidden;
 }
@@ -10,7 +10,7 @@ body{
   width: 15px;
 }
 ::-webkit-scrollbar-track {
-  background:#1e1e1e;
+  background: #1e1e1e;
   border: 0.5px solid #4e4e4e;
 }
 ::-webkit-scrollbar-thumb {
@@ -18,22 +18,22 @@ body{
   transition: ease-in-out 1s;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background:#4f4f4f;
+  background: #4f4f4f;
 }
 
-.wrap{
+.wrap {
   background-image: url(./images/background.png);
-  min-height: 350vh; 
+  min-height: 350vh;
+  padding-bottom: 80px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #1e1e1e;
   scroll-snap-type: y mandatory;
-
 }
 
-section.introduce{
+section.introduce {
   position: relative;
   top: 0;
   height: 837px;
@@ -42,10 +42,10 @@ section.introduce{
   justify-content: center;
   align-items: center;
   z-index: 20;
-  font-family: "Malgun Gothic",sans-serif;
+  font-family: "Malgun Gothic", sans-serif;
   scroll-snap-align: start;
 }
-.introduce_container{
+.introduce_container {
   width: 800px;
   display: flex;
   margin-top: 60px;
@@ -53,60 +53,60 @@ section.introduce{
   justify-content: center;
   align-items: center;
 }
-.contents_name{
-  font-size:35px;
+.contents_name {
+  font-size: 35px;
   font-weight: bold;
-  color : #69cdfb;
+  color: #69cdfb;
   margin: 0px 210px 20px 0px;
 }
-.contents_job{
+.contents_job {
   font-size: 35px;
   font-weight: bold;
   margin-left: 240px;
   margin-bottom: 30px;
   line-height: 46px;
 }
-.bracket{
+.bracket {
   color: white;
   margin-left: -80px;
   font-size: 35px;
 }
-.contents_value{
+.contents_value {
   display: inline-block;
 }
-.contents_add_key_value{
+.contents_add_key_value {
   font-size: 35px;
   font-weight: bold;
   color: #be795c;
   margin: -10px 0px 50px 119px;
 }
-.white_text{
+.white_text {
   color: white;
 }
-.cursor{
+.cursor {
   color: white;
   font-weight: 100;
   animation: cursor infinite 0.5s;
   margin-left: -11px;
 }
-@keyframes cursor{
-  0%{
+@keyframes cursor {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
-.contents_list{
+.contents_list {
   display: flex;
   justify-content: space-between;
   width: 300px;
   margin: 0px;
 }
-.contents_list > li{
+.contents_list > li {
   display: inline-block;
-  width : 52px;
+  width: 52px;
   height: 52px;
   line-height: 52px;
   border: 1px solid white;
@@ -115,17 +115,17 @@ section.introduce{
   text-align: center;
   transition: all 0.5s;
 }
-.fab{
+.fab {
   font-size: 25px;
   margin-top: 13px;
 }
-.click{
+.click {
   color: white;
   font-weight: bolder;
   cursor: pointer;
   animation: color-change ease infinite 1s;
 }
-.mini_vscode{
+.mini_vscode {
   display: none;
   position: absolute;
   /* bottom: 195px;
@@ -139,7 +139,7 @@ section.introduce{
   background-color: #1e1e1e;
   box-shadow: 5px 5px rgb(46, 46, 46);
 }
-.mini_vscode_show{
+.mini_vscode_show {
   display: block;
   position: absolute;
   margin: -232px 0px 0px 270px;
@@ -151,23 +151,22 @@ section.introduce{
   background-color: #1e1e1e;
   box-shadow: 5px 5px rgb(46, 46, 46);
 }
-.vscode_container{
+.vscode_container {
   display: flex;
   align-items: center;
   width: 300px;
   height: 40px;
   background-color: #252526;
 }
-.vscode_interview_q{
+.vscode_interview_q {
   font-size: 20px;
   font-weight: bolder;
   color: #e6e659;
-  font-family: 'netmarbleB';
+  font-family: "netmarbleB";
   padding: 15px 15px;
-  background:#1e1e1e;
-
+  background: #1e1e1e;
 }
-.vscode_sub_title{
+.vscode_sub_title {
   display: flex;
   align-items: center;
   position: relative;
@@ -176,11 +175,10 @@ section.introduce{
   font-weight: bolder;
   font-size: 16px;
   color: #ffffff;
-  font-family: 'ChosunGu';  
-  background:#1e1e1e;
-
+  font-family: "ChosunGu";
+  background: #1e1e1e;
 }
-.vscode_interview_margin{
+.vscode_interview_margin {
   position: absolute;
   right: 10px;
   display: flex;
@@ -192,65 +190,66 @@ section.introduce{
   font-weight: bolder;
   color: #cbcbcb;
 }
-@keyframes color-change{
-  0%{
-      color: #be795c;
+@keyframes color-change {
+  0% {
+    color: #be795c;
   }
-  30%{
-      color:#69cdfb;
+  30% {
+    color: #69cdfb;
   }
-  100%{
-      color: #99ce9b;
+  100% {
+    color: #99ce9b;
   }
 }
-.facebook:hover{
+.facebook:hover {
   background-color: #3d548e;
 }
-.git:hover{
+.git:hover {
   background-color: #000000;
 }
-.instagram:hover{
-  background: linear-gradient(45deg,#eec800 20%,#ee060f 60%, #7a38ab 80%);
+.instagram:hover {
+  background: linear-gradient(45deg, #eec800 20%, #ee060f 60%, #7a38ab 80%);
 }
-.click:hover{
+.click:hover {
   background-color: white;
 }
-.contents_list > li:last-child{
+.contents_list > li:last-child {
   margin-right: 0;
 }
-.contents_list > li > a{
+.contents_list > li > a {
   color: white;
 }
 
 /* interview */
 @font-face {
-  font-family: 'netmarbleB';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
+  font-family: "netmarbleB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
-} 
+}
 
-section.interview{
+section.interview {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   /* height: 837px; */
   margin-top: -33px;
   z-index: 20;
   scroll-snap-align: start;
-} 
+}
 
-.introduce_contents_title{
+.introduce_contents_title {
   margin: 0px 0 24px 50px;
   align-self: flex-start;
   font-size: 35px;
   font-weight: 500;
   color: #6a9955;
-  font-family: 'ChosunGu';
+  font-family: "ChosunGu";
 }
-.interview_container{
+.interview_container {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -261,7 +260,7 @@ section.interview{
   margin: 0;
 }
 
-.sentence_container{
+.sentence_container {
   position: relative;
   height: 340px;
   width: 655px;
@@ -279,29 +278,28 @@ section.interview{
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.blank{
+.blank {
   position: relative;
   height: 1px;
   width: 655px;
 }
-.title_container{
+.title_container {
   display: flex;
   align-items: center;
   width: 652px;
   height: 40px;
   background-color: #252526;
 }
-.interview_q{
+.interview_q {
   font-size: 20px;
   font-weight: bolder;
   color: #e6e659;
-  font-family: 'netmarbleB';
+  font-family: "netmarbleB";
   padding: 15px 15px;
-  background:#1e1e1e;
-
+  background: #1e1e1e;
 }
 
-.interview_sub_title{
+.interview_sub_title {
   display: flex;
   align-items: center;
   position: relative;
@@ -310,11 +308,10 @@ section.interview{
   font-weight: bolder;
   font-size: 24px;
   color: #ffffff;
-  font-family: 'ChosunGu';  
-  background:#1e1e1e;
-
+  font-family: "ChosunGu";
+  background: #1e1e1e;
 }
-.interview_sub_title2{
+.interview_sub_title2 {
   display: flex;
   align-items: center;
   position: relative;
@@ -323,10 +320,10 @@ section.interview{
   font-weight: bolder;
   font-size: 24px;
   color: #ffffff;
-  font-family: 'ChosunGu';  
-  background:#1e1e1e;
+  font-family: "ChosunGu";
+  background: #1e1e1e;
 }
-.interview_margin{
+.interview_margin {
   position: absolute;
   right: 27px;
   display: flex;
@@ -338,57 +335,57 @@ section.interview{
   font-weight: bolder;
   color: #cbcbcb;
 }
-.interview_box{
+.interview_box {
   position: relative;
   width: 650px;
   height: 300px;
   overflow-y: auto;
 }
-.interview_box2{
+.interview_box2 {
   position: relative;
   width: 650px;
 }
-.interview_answer{
+.interview_answer {
   height: 290px;
-  font-family: 'ChosunGu';
+  font-family: "ChosunGu";
   color: rgb(212, 212, 212);
   font-size: 19px;
   line-height: 38px;
   padding: 10px 20px 0px 20px;
 }
-.interview_answer2{
-  font-family: 'ChosunGu';
+.interview_answer2 {
+  font-family: "ChosunGu";
   color: rgb(212, 212, 212);
   font-size: 19px;
   line-height: 38px;
   padding: 10px 20px 0px 20px;
 }
-
-
 
 /* portfolio */
 @font-face {
-  font-family: 'InfinitySans-BoldA1';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
+  font-family: "InfinitySans-BoldA1";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'ChosunGu';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+  font-family: "ChosunGu";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
-section.portfolio{
+section.portfolio {
   position: relative;
   /* height: 1415px; */
   z-index: 20;
   display: flex;
   flex-wrap: wrap;
   scroll-snap-align: start;
-  font-family: 'ChosunGu';
+  font-family: "ChosunGu";
   font-weight: 100;
-} 
+}
 .plz {
   display: flex;
   flex-direction: row;
@@ -396,16 +393,17 @@ section.portfolio{
   justify-content: space-around;
   width: 1700px;
   margin-top: 25px;
+  margin-bottom: 25px;
 }
-.portfolio_contents_title{
+.portfolio_contents_title {
   margin: 35px 0 0 50px;
   align-self: flex-start;
   font-size: 35px;
   font-weight: 500;
   color: #6a9955;
-  font-family: 'ChosunGu';
+  font-family: "ChosunGu";
 }
-.portfolio_container{
+.portfolio_container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -413,7 +411,7 @@ section.portfolio{
   /* height: 700px; */
   margin: -10px 0px 0px 18px;
 }
-.portfolio_container2{
+.portfolio_container2 {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -421,7 +419,7 @@ section.portfolio{
   /* height: 700px; */
   /* margin: 0px 0px 0px 100px; */
 }
-.image_container{
+.image_container {
   position: relative;
   top: 10px;
   left: 34px;
@@ -431,26 +429,25 @@ section.portfolio{
   justify-content: space-between;
   align-items: center;
 }
-.left_arrow{
+.left_arrow {
   position: relative;
   right: 10px;
   color: #bb6845;
   font-size: 80px;
   font-weight: 100;
-
 }
-.right_arrow{
+.right_arrow {
   position: relative;
-  color:#bb6845;
+  color: #bb6845;
   font-size: 80px;
   font-weight: 100;
 }
 
-.portfolio_image{
+.portfolio_image {
   width: 470px;
   position: relative;
 }
-.explain_container{
+.explain_container {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -461,32 +458,32 @@ section.portfolio{
   overflow-y: auto;
 }
 
-.explain_box{
+.explain_box {
   margin-bottom: 10px;
   padding: 0px 10px;
 }
 
-.portfolio_field_name{
+.portfolio_field_name {
   position: relative;
   font-size: 19px;
   color: #3b94d2;
 }
-.portfolio_explain{
+.portfolio_explain {
   position: relative;
   color: white;
   line-height: 29px;
 }
 
-@media screen and (max-width:1310px){
-  section.introduce{
+@media screen and (max-width: 1310px) {
+  section.introduce {
     height: 100vh;
     margin-top: 0px;
   }
-  section.interview{
+  section.interview {
     /* height: 100vh; */
     margin-top: 0px;
   }
-  section.portfolio{
+  section.portfolio {
     /* height: 125vh; */
     margin-top: 10px;
   }
@@ -496,7 +493,7 @@ section.portfolio{
   /* .idontknow {
     height: 670px;
   } */
-  .sentence_container{
+  .sentence_container {
     width: 745px;
     margin-bottom: 34px;
   }
@@ -506,13 +503,13 @@ section.portfolio{
     height: 330px;
     margin-bottom: 34px;
   }
-  
-  .interview_box2{
+
+  .interview_box2 {
     width: 745px;
     height: 330px;
     overflow-y: auto;
   }
-  .interview_box{
+  .interview_box {
     width: 745px;
   }
   .contents_job {
@@ -520,28 +517,28 @@ section.portfolio{
     margin-left: 140px;
     line-height: 59px;
   }
-  .contents_name{
-    font-size:50px;
+  .contents_name {
+    font-size: 50px;
     margin: 0px 210px 20px 0px;
   }
-  .contents_add_key_value{
+  .contents_add_key_value {
     margin: 0px 0px 50px 102px;
     font-size: 50px;
     line-height: 58px;
   }
-  .contents_value{
+  .contents_value {
     display: inline;
   }
-  .interview_answer{
+  .interview_answer {
     height: 290px;
     font-size: 23px;
     line-height: 40px;
   }
-  .interview_answer2{
+  .interview_answer2 {
     font-size: 23px;
     line-height: 40px;
   }
-  .title_container{
+  .title_container {
     width: 745px;
   }
   /* section.portfolio{
